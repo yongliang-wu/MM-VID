@@ -20,3 +20,6 @@ Then run the code
 ```bash
 python main.py
 ```
+
+## TODO
+The input of external information is not supported yet.
