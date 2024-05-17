@@ -11,8 +11,8 @@ The goal of this project is to advance video understanding by leveraging the cap
 To use this repository, first clone the repository and install the required dependencies.
 
 ```bash
-git clone https://github.com/yourusername/mm-vid.git
-cd mm-vid
+git clone https://github.com/yongliang-wu/MM-VID.git
+cd MM-VID
 pip install -r requirements.txt
 ```
 
