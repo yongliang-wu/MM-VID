@@ -1,0 +1,4 @@
+moviepy
+scenedetect
+whisperx
+openai
