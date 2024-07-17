@@ -45,11 +45,11 @@ def speech_recognition(video_path):
         return "No transcription."
 
 # Step 4: Generate Clip-Level Video Descriptions
-def generate_clip_descriptions(clip_paths, scenes):
+def generate_clip_descriptions(clip_paths, scenes, num_frames=10):
     descriptions = []
     for clip_path, scene in zip(clip_paths, scenes):
         clip = VideoFileClip(clip_path)
-        frames = sample_frames(clip, 10)
+        frames = sample_frames(clip, num_frames)
         images = [Image.fromarray(frame) for frame in frames]
         # Convert frames to base64 for OpenAI Image API
         image_files = [convert_to_base64(image) for image in images]
@@ -137,7 +137,7 @@ if __name__ == "__main__":
     print("Transcript:", transcript)
 
     # Step 4: Generate Clip Descriptions
-    clip_descriptions = generate_clip_descriptions(clip_paths, scenes)
+    clip_descriptions = generate_clip_descriptions(clip_paths, scenes, 10)
     print("Clip Descriptions:", clip_descriptions)
 
     clip_descriptions = clip_descriptions + f'\n\n ASR:{transcript}'
