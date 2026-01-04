@@ -9,6 +9,7 @@ The goal of this project is to advance video understanding by leveraging the cap
 ## Installation
 
 To use this repository, first clone the repository and install the required dependencies.
+Note: You need to configure your GPT-4V API key in `main.py` before running the code.
 
 ```bash
 git clone https://github.com/yongliang-wu/MM-VID.git
