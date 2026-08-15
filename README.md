@@ -1,3 +1,5 @@
+
+
 # MM-Vid: Advancing Video Understanding with GPT-4V(ision)
 
 This repository contains the open source implementation of the paper ["MM-Vid: Advancing Video Understanding with GPT-4V(ision)"](https://arxiv.org/abs/2310.19773).
@@ -9,7 +11,7 @@ The goal of this project is to advance video understanding by leveraging the cap
 ## Installation
 
 To use this repository, first clone the repository and install the required dependencies.
-Note: You need to configure your GPT-4V API key in `main.py` before running the code.
+Note: Replace the placeholder `"your openai api here"` near the top of `main.py` with your actual OpenAI API key before running the code.
 
 ```bash
 git clone https://github.com/yongliang-wu/MM-VID.git
